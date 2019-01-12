@@ -13,7 +13,7 @@
 	    <div class="col-sm-6">
 
 			<br>
-			<h2>Burgers Available To Eat!</h2>
+			<h2>Burgers Ready To Eat!</h2>
 
 			<ul>
 			  {{#each burgers}}
@@ -22,7 +22,7 @@
 			      	{{this.id}}
 			        {{this.burger_name}}
 
-			        <form action="/{{this.id}}?_method=PUT" method="POST">
+			        <form action="/{{this.id}}?_method=PUT" method = "POST">
 			          <input type="hidden" name="devoured" value="true">
 			          <button class="btn-primary" type="submit">Devour It!</button>
 			        </form>
