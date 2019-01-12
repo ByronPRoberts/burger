@@ -1,12 +1,22 @@
 var mysql = require("mysql");
+var mysql2 = require("mysql2");
 
-var connection = mysql.createConnection({
+var connection = mysql2.createConnection({
   host: "localhost",
-  // port: 3000,
+  port: 3306,
   user: "root",
   password: "ByronCamp1!",
   database: "burgers_db"
 });
+
+
+// var connection = mysql.createConnection({
+//   host: "localhost",
+//   port: 3001,
+//   user: "root",
+//   password: "ByronCamp1!",
+//   database: "burgers_db"
+// });
 
 connection.connect(function(err) {
   if (err) {
